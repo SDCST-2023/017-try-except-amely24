@@ -15,3 +15,10 @@ The reciprocal of 3 is 0.3333333333333333
 The reciprocal of 4 is 0.25
 """
 numbers = [0,1,2,3,4]
+for num in numbers:
+
+    try:
+        reciprocal=1/num
+        print(f"The reciprocal of {num} is {reciprocal}")
+    except ZeroDivisionError:
+        print("The reciprocal of 0 does not exist") 

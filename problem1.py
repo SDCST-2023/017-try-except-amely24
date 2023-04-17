@@ -35,3 +35,22 @@ os.system('cls')
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+
+while True:
+  try:
+    a = float(input("a: "))
+    b = float(input("b: "))
+    c = float(input("c: "))
+  except Exception as e:
+    print("Those are not valid values for a, b or c")
+    
+  try:
+    x1=round((-b+(b**2-4*a*c)**0.5)/(2*a), 2)
+    x2=round((-b-(b**2-4*a*c)**0.5)/(2*a), 2)
+
+    print(f"The roots are {x1} and {x2}")
+  except Exception as e:
+    print("There are no real roots to the equation")
+  
+
+
